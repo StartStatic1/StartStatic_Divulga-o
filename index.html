@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links | ApkBugado</title>
+    <style>
+        /* Reset e Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6; /* Cor mais leve, cinza bem claro */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Topo - StartStatic */
+        .header-banner {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header-banner img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .dev-by {
+            font-size: 12px;
+            color: #888;
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Grid de Blocos */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dois blocos lado a lado */
+            gap: 15px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Card / Bloco */
+        .link-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 15px;
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .link-card:active {
+            transform: scale(0.95);
+        }
+
+        /* Imagens dos Blocos */
+        .link-card img {
+            width: 70px;
+            height: 70px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        .link-card span {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+
+        .link-card small {
+            font-size: 11px;
+            color: #777;
+            margin-top: 4px;
+        }
+
+        /* Destaques (BGDV e VIP) */
+        .highlight {
+            border: 1px solid #8a2be2;
+            background: #f9f5ff;
+        }
+
+        /* Rodapé */
+        footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        /* Ajuste para telas muito pequenas */
+        @media (max-width: 350px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Fica um por linha se a tela for minúscula */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <img src="img/startstatic.jpg" alt="StartStatic">
+        <div class="dev-by">Desenvolvido por StartStatic</div>
+    </div>
+
+    <div class="grid-container">
+
+        <a href="https://youtube.com/@a1filmesofc" class="link-card">
+            <img src="img/a1filmes.jpg" alt="A1 Filmes">
+            <span>A1 FILMES</span>
+            <small>YouTube</small>
+        </a>
+
+        <a href="https://www.tiktok.com/@moviepixelofc" class="link-card">
+            <img src="img/moviepixel.jpg" alt="Movie Pixel">
+            <span>MOVIE PIXEL</span>
+            <small>TikTok</small>
+        </a>
+
+        <a href="https://k.kwai.com/u/@CineSky" class="link-card">
+            <img src="img/cinesky.jpg" alt="Cine Sky">
+            <span>CINE SKY</span>
+            <small>Kwai Cortes</small>
+        </a>
+
+        <a href="https://k.kwai.com/u/@Narrandopravc" class="link-card">
+            <img src="img/narrando.jpg" alt="Narrando pra vc">
+            <span>NARRANDO PRA VC</span>
+            <small>Kwai Narrados</small>
+        </a>
+
+        <a href="https://t.me/ApkBugado" class="link-card">
+            <img src="img/apkbugado.png" alt="ApkBugado">
+            <span>APK BUGADO</span>
+            <small>Grupo Free</small>
+        </a>
+
+        <a href="https://rafflores17-prog.github.io/vip-apk/" class="link-card highlight">
+            <img src="img/apkbugado.png" alt="ApkBugado VIP">
+            <span>GRUPO VIP</span>
+            <small>Acesso Premium</small>
+        </a>
+
+        <a href="https://painel-vip-pro.vercel.app/" class="link-card">
+            <img src="img/painelvip.jpg" alt="Painel VIP">
+            <span>PAINEL VIP</span>
+            <small>Site Oficial</small>
+        </a>
+
+        <a href="http://bgdv.online" class="link-card highlight">
+            <img src="img/bgdv.jpg" alt="BGDV">
+            <span>BGDV</span>
+            <small>Encurtador</small>
+        </a>
+
+    </div>
+
+    <footer>
+        &copy; 2026 ApkBugado - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
