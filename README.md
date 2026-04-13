@@ -1,0 +1,1 @@
+# StartStatic_Divulga-o
